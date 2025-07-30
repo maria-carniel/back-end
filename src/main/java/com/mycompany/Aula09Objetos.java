@@ -24,6 +24,14 @@ public class Aula09Objetos {
         // Instãnciando uma classe
         Carro carro = new Carro("Chevrolet", "Celta");
         carro.andar(60);
+        carro.parar();
+
+        Carro carro2 = new Carro("celta", "Chevrolet");
+
+        System.out.println(carro == carro2); // Falso, são objetos diferentes
+
+        System.out.println(carro instanceof Carro); // True, é um instância de Carro
+        System.out.println(carro instanceof Object); // True, é uma instância de Object
     }
     
     /*
@@ -54,6 +62,10 @@ public class Aula09Objetos {
         void andar(int km) {
             this.quilometragem += km;
             System.out.println("O carro está percorrendo " + km + "km");
+        }
+        
+        void parar() {
+            System.out.println("O veículo parou !! e percorreu um total de " + this.quilometragem + "km");
 
         }
     }
