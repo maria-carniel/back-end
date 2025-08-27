@@ -23,11 +23,8 @@ public class App {
 
         pessoa2.exibirDados();
 
-        pessoa1.atribuirSalario(2000.0);
+        pessoa1.atribuirSalario(2000.0, 500 );
         pessoa2.atribuirSalario(3500);
-
-        
-
     }
 
 }
