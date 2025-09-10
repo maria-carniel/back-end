@@ -27,9 +27,28 @@ public class Pessoa {
     }
 
 
+    public Pessoa(String nome) {
+        this.nome = nome;
+        System.out.println("Chamando construtor 2");
+    }
+
+    public Pessoa(int idade) {
+        this.idade = idade;
+        System.out.println("Chamando construtor 3");
+    }
+
+   public Pessoa(double altura) {
+        this.altura = altura;
+        System.out.println("Chamando construtor 4");
+   }
+
+   //Não pode ter a mesma quantidade de parâmetros e tipos
+   //public Pessoa(double peso) {
+   //   this.peso = peso;
+   //}
+
     public String getNome() {
         return nome;
-        System.out.println("Chamando construtor 2");
     }
 
     public void setNome(String nome) {
